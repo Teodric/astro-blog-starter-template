@@ -5,16 +5,19 @@
  */
 
 :root {
-  --accent: #2337ff;
-  --accent-dark: #000d8a;
+  --accent: #2d5016;
+  --accent-dark: #1a3009;
+  --accent-light: #4a7c2a;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
-  --gray-light: 229, 233, 240;
+  --gray-light: 245, 247, 250;
   --gray-dark: 34, 41, 57;
-  --gray-gradient: rgba(var(--gray-light), 50%), #fff;
+  --green-light: 240, 248, 235;
+  --green-medium: 200, 230, 180;
+  --gray-gradient: rgba(var(--green-light), 50%), #fff;
   --box-shadow:
-    0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-    0 16px 32px rgba(var(--gray), 33%);
+    0 2px 6px rgba(var(--gray), 15%), 0 8px 24px rgba(var(--gray), 20%),
+    0 16px 32px rgba(var(--gray), 20%);
 }
 @font-face {
   font-family: "Atkinson";
@@ -35,8 +38,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(var(--gray-gradient)) no-repeat;
-  background-size: 100% 600px;
+  background: #fafbf9;
   word-wrap: break-word;
   overflow-wrap: break-word;
   color: rgb(var(--gray-dark));
@@ -44,10 +46,10 @@ body {
   line-height: 1.7;
 }
 main {
-  width: 720px;
-  max-width: calc(100% - 2em);
-  margin: auto;
-  padding: 3em 1em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 h1,
 h2,

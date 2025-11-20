@@ -1,6 +1,6 @@
 {
-  "name": "astro-blog-starter-template",
-  "description": "Build a personal website, blog, or portfolio with Astro.",
+  "name": "greenscape-landscaping",
+  "description": "Professional landscaping website built with Astro.",
   "private": true,
   "cloudflare": {
     "label": "Astro Framework Starter",

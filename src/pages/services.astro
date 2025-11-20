@@ -1,0 +1,266 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title="Our Services | {SITE_TITLE}" description="Comprehensive landscaping services including design, installation, maintenance, and irrigation." />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="page-header">
+				<div class="container">
+					<h1>Our Services</h1>
+					<p class="page-subtitle">Comprehensive landscaping solutions for your property</p>
+				</div>
+			</section>
+
+			<section class="services-detail">
+				<div class="container">
+					<div class="service-item">
+						<div class="service-content">
+							<div class="service-icon-large">🌳</div>
+							<h2>Landscape Design</h2>
+							<p>Our expert designers work with you to create a custom landscape plan that reflects your style and meets your needs. We consider your property's unique characteristics, climate, and maintenance preferences to design a beautiful, functional outdoor space.</p>
+							<ul>
+								<li>Custom design consultations</li>
+								<li>3D renderings and visualizations</li>
+								<li>Plant selection and placement</li>
+								<li>Hardscape design</li>
+								<li>Lighting design</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-item">
+						<div class="service-content">
+							<div class="service-icon-large">🌿</div>
+							<h2>Installation</h2>
+							<p>Professional installation services for all aspects of your landscape. Our skilled team ensures quality workmanship and attention to detail in every project.</p>
+							<ul>
+								<li>Plant installation and planting</li>
+								<li>Hardscape installation (patios, walkways, retaining walls)</li>
+								<li>Lawn installation and sodding</li>
+								<li>Tree and shrub planting</li>
+								<li>Outdoor feature installation</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-item">
+						<div class="service-content">
+							<div class="service-icon-large">✂️</div>
+							<h2>Maintenance</h2>
+							<p>Keep your landscape looking its best with our comprehensive maintenance services. We offer flexible schedules to meet your needs.</p>
+							<ul>
+								<li>Lawn mowing and edging</li>
+								<li>Pruning and trimming</li>
+								<li>Fertilization and weed control</li>
+								<li>Seasonal cleanup</li>
+								<li>Mulching and bed maintenance</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-item">
+						<div class="service-content">
+							<div class="service-icon-large">💧</div>
+							<h2>Irrigation Systems</h2>
+							<p>Efficient irrigation systems ensure your landscape receives the right amount of water at the right time, promoting healthy growth while conserving water.</p>
+							<ul>
+								<li>Sprinkler system installation</li>
+								<li>Drip irrigation systems</li>
+								<li>Smart irrigation controllers</li>
+								<li>System repairs and maintenance</li>
+								<li>Water-efficient solutions</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-item">
+						<div class="service-content">
+							<div class="service-icon-large">🪨</div>
+							<h2>Hardscaping</h2>
+							<p>Enhance your outdoor space with beautiful hardscape features that add functionality and visual appeal.</p>
+							<ul>
+								<li>Patios and decks</li>
+								<li>Walkways and driveways</li>
+								<li>Retaining walls</li>
+								<li>Outdoor kitchens and fire features</li>
+								<li>Water features</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="service-item">
+						<div class="service-content">
+							<div class="service-icon-large">🌱</div>
+							<h2>Seasonal Services</h2>
+							<p>Year-round care to keep your landscape healthy and beautiful through every season.</p>
+							<ul>
+								<li>Spring cleanup and preparation</li>
+								<li>Summer maintenance</li>
+								<li>Fall leaf removal</li>
+								<li>Winter protection and planning</li>
+								<li>Seasonal planting</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cta-section">
+				<div class="container">
+					<h2>Ready to Transform Your Space?</h2>
+					<p>Contact us today to discuss your landscaping needs</p>
+					<a href="/contact" class="btn btn-primary btn-large">Get Free Quote</a>
+				</div>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.page-header {
+		background: linear-gradient(135deg, rgba(45, 80, 22, 0.95) 0%, rgba(74, 124, 42, 0.9) 100%);
+		color: white;
+		padding: 4rem 2rem;
+		text-align: center;
+	}
+
+	.page-header h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+		color: white;
+	}
+
+	.page-subtitle {
+		font-size: 1.25rem;
+		opacity: 0.95;
+		margin: 0;
+	}
+
+	.services-detail {
+		padding: 4rem 2rem;
+		background: white;
+	}
+
+	.service-item {
+		margin-bottom: 4rem;
+	}
+
+	.service-content {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.service-icon-large {
+		font-size: 4rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.service-content h2 {
+		font-size: 2rem;
+		margin-bottom: 1.5rem;
+		color: var(--accent);
+	}
+
+	.service-content p {
+		font-size: 1.1rem;
+		margin-bottom: 2rem;
+		color: rgb(var(--gray-dark));
+		line-height: 1.8;
+	}
+
+	.service-content ul {
+		text-align: left;
+		display: inline-block;
+		list-style: none;
+		padding: 0;
+	}
+
+	.service-content li {
+		padding: 0.75rem 0;
+		padding-left: 2rem;
+		position: relative;
+		color: rgb(var(--gray-dark));
+	}
+
+	.service-content li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: var(--accent);
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	.cta-section {
+		padding: 6rem 2rem;
+		background: var(--accent);
+		color: white;
+		text-align: center;
+	}
+
+	.cta-section h2 {
+		color: white;
+		margin-bottom: 1rem;
+	}
+
+	.cta-section p {
+		font-size: 1.25rem;
+		margin-bottom: 2rem;
+		opacity: 0.95;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 1rem 2rem;
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: all 0.3s ease;
+	}
+
+	.btn-primary {
+		background: white;
+		color: var(--accent);
+	}
+
+	.btn-primary:hover {
+		background: var(--green-light);
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.btn-large {
+		padding: 1.25rem 3rem;
+		font-size: 1.1rem;
+	}
+
+	@media (max-width: 720px) {
+		.page-header {
+			padding: 3rem 1.5rem;
+		}
+
+		.page-header h1 {
+			font-size: 2rem;
+		}
+
+		.services-detail {
+			padding: 3rem 1.5rem;
+		}
+
+		.service-content h2 {
+			font-size: 1.75rem;
+		}
+	}
+</style>
+
